@@ -45,6 +45,7 @@
       "sqlite": "2.9.2",
       "child_process": "1.0.2",
       "random-number": "0.0.9",
+      "goo.gl": "0.1.4",
       "ytdl-core": "0.20.2",
       "figlet": "1.2.0",
       "snekfetch": "4.0.0",
