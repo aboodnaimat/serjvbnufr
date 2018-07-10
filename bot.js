@@ -2414,7 +2414,7 @@ if (!profile[getvalueof.id]) profile[getvalueof.id] = {points: 0,reps: "NOT YET"
                         if (err) return console.log(err);
  
                         //ur name
-                        ctx.font = 'bold 16px Arial'; // حجم الخط و نوعه
+                        ctx.font = 'bold 16px Kathen'; // حجم الخط و نوعه
                         ctx.fontSize = '40px'; // عرض الخط
                         ctx.fillStyle = "#000000"; // لون الخط
                         ctx.textAlign = "center"; // محاذا ة النص
