@@ -2344,7 +2344,7 @@ if (err) console.error(err);
     client.on('message', message => {
         let tit = message.content.split(" ").slice(1).join(" ");
         if(message.content.startsWith(prefix + "title")) {
-        if(!profile[message.author.id].tite) profile[message.author.id].tite = "Hey im using HypeLC"
+        if(!profile[message.author.id].tite) profile[message.author.id].tite = "Hey im using SuperBot"
         if(!tit) {
             message.channel.send("**Usage: <title <something>**");
         } else {
