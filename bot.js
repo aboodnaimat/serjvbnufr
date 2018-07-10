@@ -2421,49 +2421,49 @@ if (!profile[getvalueof.id]) profile[getvalueof.id] = {points: 0,reps: "NOT YET"
                         ctx.fillText(`${getvalueof.username}`, 153, 173) // احداثيات اسمك
  
                         //ur name
-                        ctx.font = 'bold 16px Arial'; // حجم الخط و نوعه
+                        ctx.font = 'bold 16px Kathen'; // حجم الخط و نوعه
                         ctx.fontSize = '40px'; // عرض الخط
                         ctx.fillStyle = "#f1f1f1"; // لون الخط
                         ctx.textAlign = "center"; // محاذا ة النص
                         ctx.fillText(`${getvalueof.username}`, 151, 171) // احداثيات اسمك
  
                         //credit
-                        ctx.font = "bold 12px Arial" // نوع الخط وحجمه
+                        ctx.font = "bold 12px Kathen" // نوع الخط وحجمه
                         ctx.fontSize = '10px'; // عرض الخط
                         ctx.fillStyle = "#f1f1f1" // لون الخط
                         ctx.textAlign = "center"; // محاذا ة النص
                         ctx.fillText(`$${profile[getvalueof.id].credits}`, 81, 159) // احداثيات المصاري
  
                         //poits
-                        ctx.font = "bold 12px Arial" // ن
+                        ctx.font = "bold 12px Kathen" // ن
                         ctx.fontSize = '10px'; // عرض الخطوع الخط وحجمه
                         ctx.fillStyle = "#f1f1f1" // لون الخط
                         ctx.textAlign = "center"; // محاذا ة النص
                         ctx.fillText(`${profile[getvalueof.id].points}`, 221, 159) // احداثيات النقاط
  
                         //Level
-                        ctx.font = "bold 27px Arial" // نوع الخط و حجمه
+                        ctx.font = "bold 27px Kathen" // نوع الخط و حجمه
                         ctx.fontSize = '10px'; // عرض الخط
                         ctx.fillStyle = "#f1f1f1" // لون الخط
                         ctx.textAlign = "center"; // محاذا ة النص
                         ctx.fillText(`${profile[getvalueof.id].level}`, 221, 118) // احداثيات اللفل
  
                          //info
-                        ctx.font = "bold 12px Arial" // ن
+                        ctx.font = "bold 12px Kathen" // ن
                         ctx.fontSize = '15px'; // عرض الخطوع الخط وحجمه
                         ctx.fillStyle = "#000000" // لون الخط
                         ctx.textAlign = "center"; // محاذا ة النص
                         ctx.fillText(`${profile[getvalueof.id].tite}`, 150, 199) // احداثيات النقاط
  
                         //info
-                        ctx.font = "bold 12px Arial" // ن
+                        ctx.font = "bold 12px Kathen" // ن
                         ctx.fontSize = '15px'; // عرض الخطوع الخط وحجمه
                         ctx.fillStyle = "#f1f1f1" // لون الخط
                         ctx.textAlign = "center"; // محاذا ة النص
                         ctx.fillText(`${profile[getvalueof.id].tite}`, 150, 197) // احداثيات النقاط
  
                         // REP
-                        ctx.font = "bold 26px  Arial";
+                        ctx.font = "bold 26px  Kathen";
                         ctx.fontSize = "50px";
                         ctx.fillStyle = "#f1f1f1";
                         ctx.textAlign = "center";
