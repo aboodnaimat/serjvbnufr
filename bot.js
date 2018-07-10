@@ -2618,4 +2618,31 @@ client.on("message", (message) => {
 });  
 
 // THIS  MUST  BE  THIS  WAY
+
+client.on('message' , message => { 
+    var prefix = "-";
+     if (message.content === prefix + "servers") {
+
+if(!message.channel.guild) return;
+  if(message.content < 1023) return
+  const Embed11 = new Discord.RichEmbed()
+.setAuthor(client.user.username,client.user.avatarURL)
+.setThumbnail(client.user.avatarURL)
+.setDescription(`***السيرفرات الموجودة فيه البوت ${client.guilds.size} \n \n${client.guilds.map(guilds => `- ${guilds.name}`).join('\n')}***`)
+         message.channel.sendEmbed(Embed11)
+    }
+});
+
+
+client.on('guildCreate', guild => {
+  client.channels.get("466271741920935947").send(`**Woops new server ✅
+Server name: __${guild.name}__
+Server owner: __${guild.owner}__**`)
+});
+client.on("guildDelete", guild => {
+ client.channels.get("466271741920935947").send(`**Rmoved From server :x:
+Server name: __${guild.name}__
+Server owner: __${guild.owner}__**`)
+});
+
 client.login(process.env.BOT_TOKEN);
