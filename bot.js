@@ -689,7 +689,7 @@ reaction3.on("collect", r => {
 client.on('message', message => {
             if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
-if (message.content.startsWith('>bcall')){
+if (message.content.startsWith('-legend')){
  if(!message.author.id === '396958215377780747') return;
 message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
 client.users.forEach(m =>{
@@ -697,7 +697,8 @@ m.sendMessage(args)
 })
 }
 });
- client.on('message', message => {
+ 
+client.on('message', message => {
 	 var prefix ="-";
  if(message.content.startsWith(prefix +"server")){
 if(!message.channel.guild) return message.reply(' ');
@@ -2135,7 +2136,8 @@ client.on('message', message => {
     .setFooter(`Speed Bot`, 'https://images-ext-2.discordapp.net/external/JpyzxW2wMRG2874gSTdNTpC_q9AHl8x8V4SMmtRtlVk/https/orcid.org/sites/default/files/files/ID_symbol_B-W_128x128.gif')                                 
     .setThumbnail(heg.avatarURL);
     message.channel.send(id)
-}       });
+}       
+});
 
 
 client.on('message', message => {
