@@ -2210,7 +2210,7 @@ client.on('message', message => {
 
  
 
-
+const Canvas = require("canvas"); //npm i canvas
 // const Canvas = require("canvas-prebuilt"); // اذا كنت وندوز
 // npm i canvas-prebuilt
  
