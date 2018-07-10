@@ -5,6 +5,7 @@ const giphy = require('giphy-api')();
 const googl = require('goo.gl'); 
 const translate = require('google-translate-api');  
 const fs = require("fs");     
+const Canvas = require("canvas"); //npm i canvas
 const getYoutubeID = require('get-youtube-id'); 
 const moment = require("moment");  
 const { Client, Util } = require('discord.js');  
@@ -2210,7 +2211,6 @@ client.on('message', message => {
 
  
 
-const Canvas = require("canvas"); //npm i canvas
 // const Canvas = require("canvas-prebuilt"); // اذا كنت وندوز
 // npm i canvas-prebuilt
  
