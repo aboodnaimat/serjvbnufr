@@ -2207,15 +2207,7 @@ client.on('message', message => {
 });
 
 
-const fs = require("fs"); // npm i fs
-const Canvas = require("canvas"); //npm i canvas
-const jimp = require("jimp"); //npm i jimp
-const moment = require("moment") //npm i moment
-// const Canvas = require("canvas-prebuilt"); // اذا كنت وندوز
-// npm i canvas-prebuilt
- 
-//سوي ملف اسمه profile.json وحط فيه {}
-//حمل الصورة من البوست حقي او من الرابط https://prnt.sc/k0vytj
+
  
 let profile = JSON.parse(fs.readFileSync("./profile.json", "utf8"))
 client.on("message", message => {
