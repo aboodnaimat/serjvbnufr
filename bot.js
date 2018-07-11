@@ -38,7 +38,9 @@ client.on("message", message => {
 			 
 ${prefix}help-public ⇏ اوامر عامة
 ${prefix}help-admin ⇏ اوامر ادارة السيرفر
-			 
+ملاحضه البوت محمي بكود الجحفله 
+محمي  ب حذف الرومات و الكيك و مس الرتب بسرعه 
+الباند سوف يضاف لاحقا 
 ${prefix}help-games ⇏ اوامر الالعاب
 ${prefix}help-music ⇏ اوامر الموسيقى
 	  `)
