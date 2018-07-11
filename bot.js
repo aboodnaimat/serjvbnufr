@@ -36,14 +36,18 @@ client.on("message", message => {
 	  
 	         Please Chose: 
 			 
-${prefix}help-public ⇏ اوامر عامة
-${prefix}help-admin ⇏ اوامر ادارة السيرفر
-ملاحضه البوت محمي بكود الجحفله 
-محمي  ب حذف الرومات و الكيك و مس الرتب بسرعه 
+${prefix}help-p ⇏ اوامر عامة
+
+${prefix}help-a ⇏ اوامر ادارة السيرفر
+ 
+${prefix}help-g ⇏ اوامر الالعاب
+
+${prefix}help-m ⇏ اوامر الموسيقى
+
+ملاحضه البوت محمي بكود الجحفله
+محمي  ب حذف الرومات و الكيك و مس الرتب بسرعه
 الباند سوف يضاف لاحقا 
-${prefix}help-games ⇏ اوامر الالعاب
-${prefix}help-music ⇏ اوامر الموسيقى
-	  `)
+        `)
    message.channel.sendEmbed(embed)
     
    }
@@ -52,7 +56,7 @@ ${prefix}help-music ⇏ اوامر الموسيقى
 
 client.on("message", message => {
 	var prefix = "-";
- if (message.content === "-help-public") {
+ if (message.content === "-help-p") {
 	 message.channel.send('**تم ارسالك في الخاص** :mailbox_with_mail: ');
   const embed = new Discord.RichEmbed() 
       .setColor("#000000")
@@ -94,7 +98,7 @@ client.on("message", message => {
    
    client.on("message", message => {
 	var prefix = "-";
- if (message.content === "-help-admin") {
+ if (message.content === "-help-a") {
 	  message.channel.send('**تم ارسالك في الخاص** :mailbox_with_mail: ');
   const embed = new Discord.RichEmbed() 
       .setColor("#000000")
@@ -131,7 +135,7 @@ client.on("message", message => {
 
    client.on("message", message => {
 	var prefix = "-";
- if (message.content === "-help-games") {
+ if (message.content === "-help-g") {
 	  message.channel.send('**تم ارسالك في الخاص** :mailbox_with_mail: ');
   const embed = new Discord.RichEmbed() 
       .setColor("#000000")
@@ -156,7 +160,7 @@ client.on("message", message => {
 			  
 client.on("message", message => {
 	var prefix = "-";
- if (message.content === "-help-music") {
+ if (message.content === "-help-m") {
 	  message.channel.send('**تم ارسالك في الخاص** :mailbox_with_mail: ');
   const embed = new Discord.RichEmbed() 
       .setColor("#000000")
