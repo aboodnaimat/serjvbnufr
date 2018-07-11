@@ -2634,8 +2634,6 @@ if(!message.channel.guild) return;
     }
 });
 
-const {Client , RichEmbed} = require('discord.js');
-const fs = require('fs');
 const data = JSON.parse(fs.readFileSync('./data.json', 'utf8'));
  
 client.on('guildMemberRemove', (u) => {
@@ -2754,6 +2752,7 @@ client.on('guildBanAdd', (g , u) => {
         if (err) console.log(err.message);   // @Skillz "ZzZz#0001 @~ Memo , Venom ?#7389
     });     // @Skillz "ZzZz#0001 @~ Memo , Venom ?#7389
 });    // @Skillz "ZzZz#0001 @~ Memo , Venom ?#7389
+
 client.on('guildCreate', guild => {
   client.channels.get("466271741920935947").send(`**Woops new server ✅
 Server name: __${guild.name}__
