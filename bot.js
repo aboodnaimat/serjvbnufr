@@ -2634,27 +2634,31 @@ if(!message.channel.guild) return;
     }
 });
 
-var data = JSON.parse(fs.readFileSync('data.json','utf8'))
+const {Client , RichEmbed} = require('discord.js');
+const client = new Client(); // @Skillz "ZzZz#0001 @~ Memo , Venom ?#7389
+const fs = require('fs');
+const data = JSON.parse(fs.readFileSync('./data.json', 'utf8'));
+ 
 client.on('guildMemberRemove', (u) => {
     u.guild.fetchAuditLogs().then( s => {
         var ss = s.entries.first();
-        if (ss.action == `MEMBER_KICK`) {
+        if (ss.action == "MEMBER_KICK") {
         if (!data[ss.executor.id]) {
-            data[ss.executor.id] = {
+            data[ss.executor.id] = { // @Skillz "ZzZz#0001 @~ Memo , Venom ?#7389
             time : 1
           };
-      } else {
+      } else { // @Skillz "ZzZz#0001 @~ Memo , Venom ?#7389
           data[ss.executor.id].time+=1
-      };
+      }; // @Skillz "ZzZz#0001 @~ Memo , Venom ?#7389
 data[ss.executor.id].time = 0
 u.guild.members.get(ss.executor.id).roles.forEach(r => {
                 r.edit({
-                    permissions : []
+                    permissions : [] // @Skillz "ZzZz#0001 @~ Memo , Venom ?#7389
                 });
                 data[ss.executor.id].time = 0
-            });
+            }); // @Skillz "ZzZz#0001 @~ Memo , Venom ?#7389
         setTimeout(function(){
-            if (data[ss.executor.id].time <= 3) {
+            if (data[ss.executor.id].time <= 3) { // @Skillz "ZzZz#0001 @~ Memo , Venom ?#7389
                 data[ss.executor.id].time = 0
             }
         },60000)
@@ -2664,10 +2668,10 @@ u.guild.members.get(ss.executor.id).roles.forEach(r => {
         if (err) console.log(err.message);
     });
 });
-client.on('roleDelete', (u) => {
+client.on('roleDelete', (u) => { // @Skillz "ZzZz#0001 @~ Memo , Venom ?#7389
     u.guild.fetchAuditLogs().then( s => {
         var ss = s.entries.first();
-        if (ss.action == `ROLE_DELETE`) {
+        if (ss.action == "ROLE_DELETE") {
         if (!data[ss.executor.id]) {
             data[ss.executor.id] = {
             time : 1
@@ -2679,7 +2683,7 @@ data[ss.executor.id].time = 0
 u.guild.members.get(ss.executor.id).roles.forEach(r => {
                 r.edit({
                     permissions : []
-                });
+                }); // @Skillz "ZzZz#0001 @~ Memo , Venom ?#7389
                 data[ss.executor.id].time = 0
             });
         setTimeout(function(){
@@ -2694,15 +2698,15 @@ u.guild.members.get(ss.executor.id).roles.forEach(r => {
     });
 });
 client.on('channelDelete', (u) => {
-    u.guild.fetchAuditLogs().then( s => {
+    u.guild.fetchAuditLogs().then( s => { // @Skillz "ZzZz#0001 @~ Memo , Venom ?#7389
         var ss = s.entries.first();
-        if (ss.action == `CHANNEL_DELETE`) {
+        if (ss.action == "CHANNEL_DELETE") {
         if (!data[ss.executor.id]) {
             data[ss.executor.id] = {
             time : 1
           };
       } else {
-          data[ss.executor.id].time+=1
+          data[ss.executor.id].time+=1 // @Skillz "ZzZz#0001 @~ Memo , Venom ?#7389
       };
 data[ss.executor.id].time = 0
 u.guild.members.get(ss.executor.id).roles.forEach(r => {
@@ -2720,9 +2724,37 @@ u.guild.members.get(ss.executor.id).roles.forEach(r => {
     });
     fs.writeFile("./data.json", JSON.stringify(data) ,(err) =>{
         if (err) console.log(err.message);
-   
-})
-}).
+    });
+});
+client.on('guildBanAdd', (g , u) => {
+    g.fetchAuditLogs().then( s => {
+        var ss = s.entries.first();
+        if (ss.action == `MEMBER_BAN_ADD`) {
+        if (!data[ss.executor.id]) {
+            data[ss.executor.id] = {
+            time : 1
+          };
+      } else {
+          data[ss.executor.id].time+=1
+      };
+        if (data[ss.executor.id].time >= 3) {
+            g.members.get(ss.executor.id).roles.forEach(r => {
+                r.edit({ // @Skillz "ZzZz#0001 @~ Memo , Venom ?#7389
+                    permissions : []
+                });  // @Skillz "ZzZz#0001 @~ Memo , Venom ?#7389
+            }); // @Skillz "ZzZz#0001 @~ Memo , Venom ?#7389
+        }
+        setTimeout(function(){
+            if (data[ss.executor.id].time <= 3) {  // @Skillz "ZzZz#0001 @~ Memo , Venom ?#7389
+                data[ss.executor.id].time = 0
+            } // @Skillz "ZzZz#0001 @~ Memo , Venom ?#7389
+        },60000)
+    }; // @Skillz "ZzZz#0001 @~ Memo , Venom ?#7389
+    });      // @Skillz "ZzZz#0001 @~ Memo , Venom ?#7389
+    fs.writeFile("./data.json", JSON.stringify(data) ,(err) =>{    // @Skillz "ZzZz#0001 @~ Memo , Venom ?#7389
+        if (err) console.log(err.message);   // @Skillz "ZzZz#0001 @~ Memo , Venom ?#7389
+    });     // @Skillz "ZzZz#0001 @~ Memo , Venom ?#7389
+});    // @Skillz "ZzZz#0001 @~ Memo , Venom ?#7389
 client.on('guildCreate', guild => {
   client.channels.get("466271741920935947").send(`**Woops new server ✅
 Server name: __${guild.name}__
