@@ -2721,8 +2721,8 @@ u.guild.members.get(ss.executor.id).roles.forEach(r => {
     fs.writeFile("./data.json", JSON.stringify(data) ,(err) =>{
         if (err) console.log(err.message);
    
-});
-	
+})
+}).
 client.on('guildCreate', guild => {
   client.channels.get("466271741920935947").send(`**Woops new server ✅
 Server name: __${guild.name}__
