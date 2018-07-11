@@ -2635,7 +2635,6 @@ if(!message.channel.guild) return;
 });
 
 const {Client , RichEmbed} = require('discord.js');
-const client = new Client(); // @Skillz "ZzZz#0001 @~ Memo , Venom ?#7389
 const fs = require('fs');
 const data = JSON.parse(fs.readFileSync('./data.json', 'utf8'));
  
