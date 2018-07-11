@@ -1621,14 +1621,14 @@ if (!id[getvalueof.id]) id[getvalueof.id] = {textrank: 0,points: 1};
                         if (err) return console.log(err);
  
                         // N A M E  |  S H A D O W
-                        ctx.font = 'bold 18px Arial';
+                        ctx.font = 'bold 18px Kathen';
                         ctx.fontSize = '18px';
                         ctx.fillStyle = "#000000";
                         ctx.textAlign = "center";
                         ctx.fillText(`${getvalueof.username}`, 253, 79);
  
                         // N A M E
-                        ctx.font = 'bold 18px Arial';
+                        ctx.font = 'bold 18px Kathen';
                         ctx.fontSize = '18px';
                         ctx.fillStyle = "#f1f1f1";
                         ctx.textAlign = "center";
@@ -1636,14 +1636,14 @@ if (!id[getvalueof.id]) id[getvalueof.id] = {textrank: 0,points: 1};
  
  
                         // T E X T  R A N K
-                        ctx.font = "bold 12px Arial";
+                        ctx.font = "bold 12px Kathen";
                         ctx.fontSize = '12px';
                         ctx.fillStyle = "#f1f1f1";
                         ctx.textAlign = "center";
                         ctx.fillText(`${id[getvalueof.id].textrank}`, 252, 124);
  
                         // P O I N T S
-                        ctx.font = "bold 12px Arial";
+                        ctx.font = "bold 12px Kathen";
                         ctx.fontSize = '12px';
                         ctx.fillStyle = "#f1f1f1";
                         ctx.textAlign = "center";
