@@ -2509,7 +2509,7 @@ if (err) console.error(err);
             message.channel.send(`:ok:`)
         }
         }
-        fs.writeFile('./profile.json', JSON.stringify(profile), (err) => {
+        fs.writeFile('profile.json', JSON.stringify(profile), (err) => {
 if (err) console.error(err);
 })
     })
@@ -2982,3 +2982,4 @@ Server owner: __${guild.owner}__**`)
 });
 
 client.login(process.env.BOT_TOKEN);
+
