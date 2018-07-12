@@ -2722,8 +2722,7 @@ message.channel.stopTyping()
       
       
       })
-      })
-      
+});      
       
       
       
