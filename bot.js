@@ -2644,8 +2644,6 @@ message.channel.stopTyping()
 });
 
 
-bot.on("guildMemberAdd", member => {
-      const welcomer = bot.channels.get("اي دي الروم");
       //*let welcomer = member.guild.channels.find("name","welcome");
       if(!welcomer) return;
       if(welcomer) {
