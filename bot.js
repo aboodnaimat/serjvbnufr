@@ -2978,5 +2978,5 @@ Server name: __${guild.name}__
 Server owner: __${guild.owner}__**`)
 });
 
-client.login(process.env.BOT_TOKEN);
-});
+client.login({process.env.BOT_TOKEN});
+			      
