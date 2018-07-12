@@ -2723,7 +2723,6 @@ message.channel.stopTyping()
       
       })
       })			  
-      
       });
       
       
