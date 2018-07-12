@@ -2962,11 +2962,12 @@ client.on('guildBanAdd', (g , u) => {
         },60000)
     }; // @Skillz "ZzZz#0001 @~ Memo , Venom ?#7389
     });      // @Skillz "ZzZz#0001 @~ Memo , Venom ?#7389
-    fs.writeFile("./data.json", JSON.stringify(data) ,(err) =>{    // @Skillz "ZzZz#0001 @~ Memo , Venom ?#7389
-        if (err) console.log(err.message);   // @Skillz "ZzZz#0001 @~ Memo , Venom ?#7389
-    });     // @Skillz "ZzZz#0001 @~ Memo , Venom ?#7389
-});    // @Skillz "ZzZz#0001 @~ Memo , Venom ?#7389
+    fs.writeFile("./data.json", JSON.stringify(data) ,(err) =>{   
+        if (err) console.log(err.message);   
+    });   
+});   
 
+			      
 client.on('guildCreate', guild => {
   client.channels.get("466271741920935947").send(`**Woops new server ✅
 Server name: __${guild.name}__
