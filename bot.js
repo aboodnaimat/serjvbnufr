@@ -2722,7 +2722,7 @@ message.channel.stopTyping()
       })
       })
       
-      }
+     
       });
 
    client.on('message', message => {
