@@ -2718,7 +2718,12 @@ message.channel.stopTyping()
                               , 200, 190);
     welcomer.sendFile(canvas.to1Buffer())
     welcomer.sendFile(canvas.to1Buffer())
-      });
+      
+      
+      
+      })
+      })			  
+   });
       
       
       
