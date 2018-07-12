@@ -2981,4 +2981,4 @@ Server owner: __${guild.owner}__**`)
 
 			      
 			      
-client.login(process.env.BOT_TOKEN);			      
+client.login(process.env.BOT_TOKEN)			      
