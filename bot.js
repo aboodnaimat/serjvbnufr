@@ -2717,14 +2717,14 @@ message.channel.stopTyping()
                               , 200, 190);
     welcomer.sendFile(canvas.to1Buffer())
       
-      
-      
-      })
-      })
-      
-     
       });
 
+			     
+      
+      
+      
+      
+     
    client.on('message', message => {
      if (message.content === "-support") {
      let embed = new Discord.RichEmbed()
