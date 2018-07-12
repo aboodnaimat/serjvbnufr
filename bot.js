@@ -2723,7 +2723,8 @@ message.channel.stopTyping()
       
       })
       })			  
-   });
+      
+      });
       
       
       
