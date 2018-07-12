@@ -2717,12 +2717,15 @@ message.channel.stopTyping()
       ctx.fillText(`انت العضو رقم  ${member.guild.memberCount} !! `
                               , 200, 190);
     welcomer.sendFile(canvas.to1Buffer())
+    welcomer.sendFile(canvas.to1Buffer())
       
+      
+      
+      })
+      })
+      
+      }
       });
-
-			     
-      
-      
       
       
      
