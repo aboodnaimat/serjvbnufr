@@ -2724,7 +2724,6 @@ message.channel.stopTyping()
       })
       })
       
-      }
       });
       
       
