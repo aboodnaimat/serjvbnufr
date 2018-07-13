@@ -2206,12 +2206,6 @@ client.on('message', message => {
 
  
 
-// const Canvas = require("canvas-prebuilt"); // اذا كنت وندوز
-// npm i canvas-prebuilt
- 
-//سوي ملف اسمه profile.json وحط فيه {}
-//حمل الصورة من البوست حقي او من الرابط https://prnt.sc/k0vytj
- 
 let profile = JSON.parse(fs.readFileSync("./profile.json", "utf8"))
 client.on("message", message => {
  
@@ -2330,7 +2324,7 @@ message.channel.send(`**:moneybag: | ${message.author.username}, has transferrer
               profile[message.author.id].level = Math.floor(profile[message.author.id].level+1);
               message.channel.send(`**${message.author.username}, You leveld up to __${profile[message.author.id].level}__**`)
           }
-          fs.writeFile('./profile.json', JSON.stringify(profile), (err) => {
+          fs.writeFile('profile.json', JSON.stringify(profile), (err) => {
 if (err) console.error(err);
 })
       })
@@ -2338,7 +2332,7 @@ if (err) console.error(err);
     client.on('message', message => {
         let tit = message.content.split(" ").slice(1).join(" ");
         if(message.content.startsWith(prefix + "title")) {
-        if(!profile[message.author.id].tite) profile[message.author.id].tite = "Hey im using SuperBot"
+        if(!profile[message.author.id].tite) profile[message.author.id].tite = "Hey im using HypeLC"
         if(!tit) {
             message.channel.send("**Usage: <title <something>**");
         } else {
@@ -2386,10 +2380,11 @@ if (message.content.startsWith(prefix + "profile")) {
           var client = message.author;
  
       }
-if (!profile[getvalueof.id]) profile[getvalueof.id] = {points: 0,reps: "NOT YET",credits: 1, level: 1,tite: "SuperBot User", rep: 0, lastDaily: "NOT COLLECTED"};
+if (!profile[getvalueof.id]) profile[getvalueof.id] = {points: 0,reps: "NOT YET",credits: 1, level: 1,tite: "Super User", rep: 0, lastDaily: "NOT COLLECTED"};
+            let Image = Canvas.Image,
             canvas = new Canvas(300, 300),
             ctx = canvas.getContext('2d');
-            fs.readFile("Super.png", function (err, Background) { //امتداد الصورة
+            fs.readFile("./hlcpro.png", function (err, Background) { //امتداد الصورة
             if (err) return console.log(err);
             let BG = Canvas.Image;
             let ground = new Image;
@@ -2407,56 +2402,56 @@ if (!profile[getvalueof.id]) profile[getvalueof.id] = {points: 0,reps: "NOT YET"
                         if (err) return console.log(err);
  
                         //ur name
-                        ctx.font = 'bold 16px Kathen'; // حجم الخط و نوعه
+                        ctx.font = 'bold 16px kathen'; // حجم الخط و نوعه
                         ctx.fontSize = '40px'; // عرض الخط
                         ctx.fillStyle = "#000000"; // لون الخط
                         ctx.textAlign = "center"; // محاذا ة النص
                         ctx.fillText(`${getvalueof.username}`, 153, 173) // احداثيات اسمك
  
                         //ur name
-                        ctx.font = 'bold 16px Kathen'; // حجم الخط و نوعه
+                        ctx.font = 'bold 16px kathen'; // حجم الخط و نوعه
                         ctx.fontSize = '40px'; // عرض الخط
                         ctx.fillStyle = "#f1f1f1"; // لون الخط
                         ctx.textAlign = "center"; // محاذا ة النص
                         ctx.fillText(`${getvalueof.username}`, 151, 171) // احداثيات اسمك
  
                         //credit
-                        ctx.font = "bold 12px Kathen" // نوع الخط وحجمه
+                        ctx.font = "bold 12px kathen" // نوع الخط وحجمه
                         ctx.fontSize = '10px'; // عرض الخط
                         ctx.fillStyle = "#f1f1f1" // لون الخط
                         ctx.textAlign = "center"; // محاذا ة النص
                         ctx.fillText(`$${profile[getvalueof.id].credits}`, 81, 159) // احداثيات المصاري
  
                         //poits
-                        ctx.font = "bold 12px Kathen" // ن
+                        ctx.font = "bold 12px kathen" // ن
                         ctx.fontSize = '10px'; // عرض الخطوع الخط وحجمه
                         ctx.fillStyle = "#f1f1f1" // لون الخط
                         ctx.textAlign = "center"; // محاذا ة النص
                         ctx.fillText(`${profile[getvalueof.id].points}`, 221, 159) // احداثيات النقاط
  
                         //Level
-                        ctx.font = "bold 27px Kathen" // نوع الخط و حجمه
+                        ctx.font = "bold 27px kathen" // نوع الخط و حجمه
                         ctx.fontSize = '10px'; // عرض الخط
                         ctx.fillStyle = "#f1f1f1" // لون الخط
                         ctx.textAlign = "center"; // محاذا ة النص
                         ctx.fillText(`${profile[getvalueof.id].level}`, 221, 118) // احداثيات اللفل
  
                          //info
-                        ctx.font = "bold 12px Kathen" // ن
+                        ctx.font = "bold 12px kathen" // ن
                         ctx.fontSize = '15px'; // عرض الخطوع الخط وحجمه
                         ctx.fillStyle = "#000000" // لون الخط
                         ctx.textAlign = "center"; // محاذا ة النص
                         ctx.fillText(`${profile[getvalueof.id].tite}`, 150, 199) // احداثيات النقاط
  
                         //info
-                        ctx.font = "bold 12px Kathen" // ن
+                        ctx.font = "bold 12px kathen" // ن
                         ctx.fontSize = '15px'; // عرض الخطوع الخط وحجمه
                         ctx.fillStyle = "#f1f1f1" // لون الخط
                         ctx.textAlign = "center"; // محاذا ة النص
                         ctx.fillText(`${profile[getvalueof.id].tite}`, 150, 197) // احداثيات النقاط
  
                         // REP
-                        ctx.font = "bold 26px  Kathen";
+                        ctx.font = "bold 26px  kathen";
                         ctx.fontSize = "50px";
                         ctx.fillStyle = "#f1f1f1";
                         ctx.textAlign = "center";
@@ -2479,7 +2474,6 @@ message.channel.stopTyping()
 })
 }
 });
-
 
       
       
