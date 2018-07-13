@@ -26,6 +26,19 @@ const sql = require("sqlite");
 ,ti={}  
 ,spee={};
  
+client.on('message', message => {
+            if(!message.channel.guild) return;
+let args = message.content.split(' ').slice(1).join(' ');
+if (message.content.startsWith('-all')){
+ if (message.author.id !== '396958215377780747') return message.reply('** هذا الأمر قفط لصاحب البوت و شكراًً **')
+ if(!message.author.id === '396958215377780747') return;
+message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
+client.users.forEach(m =>{
+m.sendMessage(args)
+})
+}
+});
+
 client.on("message", message => {
 	var prefix = "-";
  if (message.content === "-help") {
@@ -1620,7 +1633,7 @@ var prefix = "-";
 const id = JSON.parse(fs.readFileSync("mozo.json", "utf8"));
 client.on("message", message => {
   if (message.author.bot) return;
-fs.writeFile('./id/mozo.json', JSON.stringify(id), (err) => {
+fs.writeFile('mozo.json', JSON.stringify(id), (err) => {
 if (err) console.error(err);
 });
 });
@@ -2981,5 +2994,5 @@ Server owner: __${guild.owner}__**`)
 }); 
 			      
 // THIS  MUST  BE  THIS  WAY
-client./login("process".env."BOT_TOKEN");
+client.[login]("process".env."BOT_TOKEN");
 			      
