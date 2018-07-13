@@ -772,18 +772,7 @@ client.on('message', message => {
 }
 });
 
-client.on("message", message => {
-    var prefix = "-"
-    if (!message.content.startsWith(prefix)) return;
-      let command = message.content.split(" ")[0];
-      command = command.slice(prefix.length);
-        if(command === "skin") {
-                const args = message.content.split(" ").slice(1).join(" ")
-        if (!args) return message.channel.send("** Type your skin name **");
-        const image = new Discord.Attachment(`https://visage.surgeplay.com/full/256/${args}`, "skin.png");
-    message.channel.send(image)
-        }
-    });
+
 client.on("guildMemberAdd", member => {
 let welcomer = member.guild.channels.find("name","welcome");
       if(!welcomer) return;
@@ -1543,27 +1532,7 @@ var prefix = "-";
  }
 });
 
-const id = JSON.parse(fs.readFileSync("mozo.json", "utf8"));
-client.on("message", message => {
-  if (message.author.bot) return;
-fs.writeFile('mozo.json', JSON.stringify(id), (err) => {
-if (err) console.error(err);
-});
-});
-      client.on('message', message => {
-          if(!id[message.author.id]) id[message.author.id] ={
-              textrank: 1,
-              points: 1
-          };
-          if(message.author.bot) return;
-          id[message.author.id].points = Math.floor(id[message.author.id].points+4);
-          if(id[message.author.id].points > 10) {
-              id[message.author.id].points = 10;
-              id[message.author.id].level = Math.floor(id[message.author.id].level+4);
-          }
-          fs.writeFile('mozo.json', JSON.stringify(id), (err) => {
-if (err) console.error(err);
-});
+
    
 
 
