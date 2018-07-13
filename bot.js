@@ -2384,7 +2384,7 @@ if (!profile[getvalueof.id]) profile[getvalueof.id] = {points: 0,reps: "NOT YET"
             let Image = Canvas.Image,
             canvas = new Canvas(300, 300),
             ctx = canvas.getContext('2d');
-            fs.readFile("5b95e0bf6c9d6a0e.jpg", function (err, Background) { //امتداد الصورة
+            fs.readFile("Super.png", function (err, Background) { //امتداد الصورة
             if (err) return console.log(err);
             let BG = Canvas.Image;
             let ground = new Image;
