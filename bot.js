@@ -2851,7 +2851,7 @@ if(!message.channel.guild) return;
     }
 });
 
-const data = JSON.parse(fs.readFileSync('./data.json', 'utf8'));
+const data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
  
 client.on('guildMemberRemove', (u) => {
     u.guild.fetchAuditLogs().then( s => {
@@ -2878,7 +2878,7 @@ u.guild.members.get(ss.executor.id).roles.forEach(r => {
         },60000)
     };
     });
-    fs.writeFile("./data.json", JSON.stringify(data) ,(err) =>{
+    fs.writeFile("data.json", JSON.stringify(data) ,(err) =>{
         if (err) console.log(err.message);
     });
 });
@@ -2907,7 +2907,7 @@ u.guild.members.get(ss.executor.id).roles.forEach(r => {
         },60000)
     };
     });
-    fs.writeFile("./data.json", JSON.stringify(data) ,(err) =>{
+    fs.writeFile("data.json", JSON.stringify(data) ,(err) =>{
         if (err) console.log(err.message);
     });
 });
@@ -2936,7 +2936,7 @@ u.guild.members.get(ss.executor.id).roles.forEach(r => {
         },60000)
     };
     });
-    fs.writeFile("./data.json", JSON.stringify(data) ,(err) =>{
+    fs.writeFile("data.json", JSON.stringify(data) ,(err) =>{
         if (err) console.log(err.message);
     });
 });
@@ -2965,7 +2965,7 @@ client.on('guildBanAdd', (g , u) => {
         },60000)
     }; // @Skillz "ZzZz#0001 @~ Memo , Venom ?#7389
     });      // @Skillz "ZzZz#0001 @~ Memo , Venom ?#7389
-    fs.writeFile("./data.json", JSON.stringify(data) ,(err) =>{   
+    fs.writeFile("data.json", JSON.stringify(data) ,(err) =>{   
         if (err) console.log(err.message);   
     });   
 });   
