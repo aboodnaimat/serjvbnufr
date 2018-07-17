@@ -2140,8 +2140,8 @@ client.on('message', message => {
 }
 });
 
-const iscord = require('discord.js');
-const lient = new Discord.Client();
+const discord = require('discord.js');
+const client = new Discord.Client();
 const fs = require('fs');
 const moment = require('moment');
 client.on("guildMemberAdd", member => {
