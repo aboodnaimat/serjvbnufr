@@ -2196,7 +2196,6 @@ client.on("guildMemberAdd", member => {
    (` Welcome to ${member.guild.name} server` , 200, 190);
  
  
-    welcomer.sendFile;
  
  
       });
