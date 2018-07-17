@@ -2179,7 +2179,7 @@ client.on("guildMemberAdd", member => {
                         fontSize = '20px';
                         fillStyle = "#FFFFFF";
                         textAlign = "center";
-                        fillText(`انت العضو رقم  ${member.guild.memberCount} ! `, 340 , 98);
+                        (`انت العضو رقم  ${member.guild.memberCount} ! `, 340 , 98);
  
                                                       //name
                               ctx.font = '20px Arial Bold';
