@@ -2191,7 +2191,7 @@ client.on("guildMemberAdd", member => {
                              //server name
                               font = '20px Arial';
                               fontSize = '28px';
-                              ctx.fillStyle = "#FFFFFF";
+                              fillStyle = "#FFFFFF";
                               textAlign = "center";
    fillText(` Welcome to ${member.guild.name} server` , 200, 190);
  
