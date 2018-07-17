@@ -2186,14 +2186,14 @@ client.on("guildMemberAdd", member => {
                               fontSize = '20px';
                               fillStyle = "#FFFFFF";
                               textAlign = "center";
-                                                         fillText(`${member.user.username}`, 200, 154);
+                                                         (`${member.user.username}`, 200, 154);
  
                              //server name
                               font = '20px Arial';
                               fontSize = '28px';
                               fillStyle = "#FFFFFF";
                               textAlign = "center";
-   fillText(` Welcome to ${member.guild.name} server` , 200, 190);
+   (` Welcome to ${member.guild.name} server` , 200, 190);
  
  
     welcomer.sendFile(canvas.toBuffer());
