@@ -2140,67 +2140,7 @@ client.on('message', message => {
 }
 });
 
-const discord = require('discord.js');
-client.on("guildMemberAdd", member => {
- 
-      const welcomer = member.guild.channels.find("name","welcome"); //اسم روم
- 
-      
- 
-      const mi = ['w1.png','w2.png','w3.png','w4.png','w5.png','w6.png','w7.png','w8.png','w9.png','w10.png','w11.png']; //يمكن ضيف '/img/w3.png','/img/w4.png'...
- 
- 
- 
-              let Image = 
-              patternQuality = 'bilinear';
-              filter = 'bilinear';
-              antialias = 'subpixel';
-              shadowColor = 'rgba(0, 0, 0, 0.4)';
-              shadowOffsetY = 2;
-              shadowBlur = 2;
-              fs.readFile(`${mi[Math.floor(Math.random() * mi.length)]}`, function (err, Background) {
-                  if (err) return console.log(err)
-                  let BG = Image;
- 
-      })
- 
-                     let url = member.user.displayAvatarURL.endsWith(".webp") ? member.user.displayAvatarURL.slice(5, -20) + ".png" : member.user.displayAvatarURL;
-                jimp.read(url, (err, ava) => {
-                    if (err) return console.log(err);
-                    ava.getBuffer(jimp.MIME_PNG, (err, buf) => {
-                        if (err) return console.log(err);
- 
-                              //AVATARً
-                              let Avatar = Image;
-                              ava.src = buf;
-                              (ava, 152, 27, 95, 95);
-                            //member number..
-                        font = '13px Arial';
-                        fontSize = '20px';
-                        fillStyle = "#FFFFFF";
-                        textAlign = "center";
-                        (`انت العضو رقم  ${member.guild.memberCount} ! `, 340 , 98);
- 
-                                                      //name
-                              font = '20px Arial Bold';
-                              fontSize = '20px';
-                              fillStyle = "#FFFFFF";
-                              textAlign = "center";
-                                                         (`${member.user.username}`, 200, 154);
- 
-                             //server name
-                              font = '20px Arial';
-                              fontSize = '28px';
-                              fillStyle = "#FFFFFF";
-                              textAlign = "center";
-   (` Welcome to ${member.guild.name} server` , 200, 190);
- 
- 
- 
- 
-      });
-      });
-      });
+
  
  
       client.on("guildMemberAdd", member => {
@@ -2802,7 +2742,7 @@ Server name: __${guild.name}__
 Server owner: __${guild.owner}__**`)
 });
 client.on("guildDelete", guild => {
- client.channels.get("466271741920935947")(`**Rmoved From server :x:
+ client.channels.get("466271741920935947").send(`**Rmoved From server :x:
 Server name: __${guild.name}__
 Server owner: __${guild.owner}__**`)
 });
