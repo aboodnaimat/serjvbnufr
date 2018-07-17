@@ -2147,7 +2147,7 @@ client.on("guildMemberAdd", member => {
  
       
  
-      const mi = ['w1.png','w2.png','w3.png','w4.png','w5.png','w6.png','w7.png','w8.png','w9.png','w10.png','w11.png','w12.png']; //يمكن ضيف '/img/w3.png','/img/w4.png'...
+      const mi = ['w1.png','w2.png','w3.png','w4.png','w5.png','w6.png','w7.png','w8.png','w9.png','w10.png','w11.png']; //يمكن ضيف '/img/w3.png','/img/w4.png'...
  
  
  
