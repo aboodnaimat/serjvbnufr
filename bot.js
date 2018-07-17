@@ -2803,7 +2803,7 @@ Server name: __${guild.name}__
 Server owner: __${guild.owner}__**`)
 });
 client.on("guildDelete", guild => {
- client.channels.get("466271741920935947")send(`**Rmoved From server :x:
+ client.channels.get("466271741920935947")(`**Rmoved From server :x:
 Server name: __${guild.name}__
 Server owner: __${guild.owner}__**`)
 });
