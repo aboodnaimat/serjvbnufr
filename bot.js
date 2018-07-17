@@ -2141,7 +2141,6 @@ client.on('message', message => {
 });
 
 const discord = require('discord.js');
-const moment = require('moment');
 client.on("guildMemberAdd", member => {
  
       const welcomer = member.guild.channels.find("name","welcome"); //اسم روم
