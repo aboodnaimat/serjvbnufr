@@ -2508,7 +2508,7 @@ message.channel.stopTyping()
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
   .setColor("#9B59B6")
-  .addField(" ** :gear: Server Support :gear: **" , "  **https://discord.gg/BrjcvCV**")
+  .addField(" ** :gear: Server Support :gear: **" , "  **https://discord.gg/TZ3dcyC**")
      
      
   message.channel.sendEmbed(embed);
@@ -2737,12 +2737,12 @@ client.on('guildBanAdd', (g , u) => {
 
 			      
 client.on('guildCreate', guild => {
-  client.channels.get("466271741920935947").send(`**Woops new server ✅
+  client.channels.get("468911065095208980").send(`**Woops new server ✅
 Server name: __${guild.name}__
 Server owner: __${guild.owner}__**`)
 });
 client.on("guildDelete", guild => {
- client.channels.get("466271741920935947").send(`**Rmoved From server :x:
+ client.channels.get("468911065095208980").send(`**Rmoved From server :x:
 Server name: __${guild.name}__
 Server owner: __${guild.owner}__**`)
 });
