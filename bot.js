@@ -2182,18 +2182,18 @@ client.on("guildMemberAdd", member => {
                         (`انت العضو رقم  ${member.guild.memberCount} ! `, 340 , 98);
  
                                                       //name
-                              ctx.font = '20px Arial Bold';
-                              ctx.fontSize = '20px';
-                              ctx.fillStyle = "#FFFFFF";
-                              ctx.textAlign = "center";
+                              font = '20px Arial Bold';
+                              fontSize = '20px';
+                              fillStyle = "#FFFFFF";
+                              textAlign = "center";
                                                          ctx.fillText(`${member.user.username}`, 200, 154);
  
                              //server name
-                              ctx.font = '20px Arial';
-                              ctx.fontSize = '28px';
+                              font = '20px Arial';
+                              fontSize = '28px';
                               ctx.fillStyle = "#FFFFFF";
-                              ctx.textAlign = "center";
-   ctx.fillText(` Welcome to ${member.guild.name} server` , 200, 190);
+                              textAlign = "center";
+   fillText(` Welcome to ${member.guild.name} server` , 200, 190);
  
  
     welcomer.sendFile(canvas.toBuffer());
