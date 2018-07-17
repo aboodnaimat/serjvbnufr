@@ -2173,13 +2173,13 @@ client.on("guildMemberAdd", member => {
                               //AVATARً
                               let Avatar = Image;
                               ava.src = buf;
-                              ctx.drawImage(ava, 152, 27, 95, 95);
+                              .drawImage(ava, 152, 27, 95, 95);
                             //member number..
-                        ctx.font = '13px Arial';
-                        ctx.fontSize = '20px';
-                        ctx.fillStyle = "#FFFFFF";
-                        ctx.textAlign = "center";
-                        ctx.fillText(`انت العضو رقم  ${member.guild.memberCount} ! `, 340 , 98);
+                        font = '13px Arial';
+                        fontSize = '20px';
+                        fillStyle = "#FFFFFF";
+                        textAlign = "center";
+                        fillText(`انت العضو رقم  ${member.guild.memberCount} ! `, 340 , 98);
  
                                                       //name
                               ctx.font = '20px Arial Bold';
