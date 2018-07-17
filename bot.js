@@ -2152,7 +2152,6 @@ client.on("guildMemberAdd", member => {
  
  
               let Image = 
-                    getContext('2d');
               ctx.patternQuality = 'bilinear';
               ctx.filter = 'bilinear';
               ctx.antialias = 'subpixel';
