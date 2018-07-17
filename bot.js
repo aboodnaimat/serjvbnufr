@@ -2161,7 +2161,6 @@ client.on("guildMemberAdd", member => {
               fs.readFile(`${mi[Math.floor(Math.random() * mi.length)]}`, function (err, Background) {
                   if (err) return console.log(err)
                   let BG = Image;
-                  cdrawImage(ground, 0, 0, 401, 202);
  
       })
  
