@@ -2171,7 +2171,7 @@ client.on("guildMemberAdd", member => {
                         if (err) return console.log(err);
  
                               //AVATARً
-                              let Avatar = Canvas.Image;
+                              let Avatar = Image;
                               let ava = new Avatar;
                               ava.src = buf;
                               ctx.drawImage(ava, 152, 27, 95, 95);
