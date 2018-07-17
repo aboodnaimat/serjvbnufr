@@ -2140,7 +2140,7 @@ client.on('message', message => {
 }
 });
 
-const Discord = require('discord.js');
+const iscord = require('discord.js');
 const client = new Discord.Client();
 const fs = require('fs');
 const moment = require('moment');
@@ -2150,7 +2150,7 @@ client.on("guildMemberAdd", member => {
  
       
  
-      const mi = ['./img/w1.png','./img/w2.png','./img/w3.png','./img/w4.png','./img/w5.png','./img/w6.png','./img/w7.png','./img/w8.png','./img/w9.png','./img/w10.png','./img/w11.png','./img/w12.png']; //يمكن ضيف '/img/w3.png','/img/w4.png'...
+      const mi = ['w1.png','w2.png','w3.png','w4.png','w5.png','w6.png','w7.png','w8.png','w9.png','w10.png','w11.png','w12.png']; //يمكن ضيف '/img/w3.png','/img/w4.png'...
  
  
  
