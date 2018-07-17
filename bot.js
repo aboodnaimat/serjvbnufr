@@ -2152,12 +2152,12 @@ client.on("guildMemberAdd", member => {
  
  
               let Image = 
-              ctx.patternQuality = 'bilinear';
-              ctx.filter = 'bilinear';
-              ctx.antialias = 'subpixel';
-              ctx.shadowColor = 'rgba(0, 0, 0, 0.4)';
-              ctx.shadowOffsetY = 2;
-              ctx.shadowBlur = 2;
+              .patternQuality = 'bilinear';
+              .filter = 'bilinear';
+              .antialias = 'subpixel';
+              .shadowColor = 'rgba(0, 0, 0, 0.4)';
+              .shadowOffsetY = 2;
+              .shadowBlur = 2;
               fs.readFile(`${mi[Math.floor(Math.random() * mi.length)]}`, function (err, Background) {
                   if (err) return console.log(err)
                   let BG = Canvas.Image;
