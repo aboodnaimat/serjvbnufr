@@ -2160,10 +2160,10 @@ client.on("guildMemberAdd", member => {
               shadowBlur = 2;
               fs.readFile(`${mi[Math.floor(Math.random() * mi.length)]}`, function (err, Background) {
                   if (err) return console.log(err)
-                  let BG = Canvas.Image;
+                  let BG = Image;
                   let ground = new Image;
                   ground.src = Background;
-                  ctx.drawImage(ground, 0, 0, 401, 202);
+                  cdrawImage(ground, 0, 0, 401, 202);
  
       })
  
