@@ -2173,7 +2173,7 @@ client.on("guildMemberAdd", member => {
                               //AVATARً
                               let Avatar = Image;
                               ava.src = buf;
-                              .drawImage(ava, 152, 27, 95, 95);
+                              drawImage(ava, 152, 27, 95, 95);
                             //member number..
                         font = '13px Arial';
                         fontSize = '20px';
