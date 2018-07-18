@@ -2206,7 +2206,7 @@ client.on('message', message => {
     }
 });
 
-
+const Canvas = require("canvas"); //npm i canvas
 let profile = JSON.parse(fs.readFileSync("profile.json", "utf8"))
 client.on("message", message => {
  
@@ -2381,7 +2381,9 @@ if (message.content.startsWith(prefix + "profile")) {
           var client = message.author;
  
       }
-if (!profile[getvalueof.id]) profile[getvalueof.id] = {points: 0,reps: "NOT YET",credits: 1, level: 1,tite: "Super User", rep: 0, lastDaily: "NOT COLLECTED"};
+if (!profile[getvalueof.id]) profile[getvalueof.id] = {points: 0,reps: "NOT YET",credits: 1, level: 1,tite: "HypeLC User", rep: 0, lastDaily: "NOT COLLECTED"};
+            let Image = Canvas.Image,
+            canvas = new Canvas(300, 300),
             ctx = canvas.getContext('2d');
             fs.readFile("Super.png", function (err, Background) { //امتداد الصورة
             if (err) return console.log(err);
