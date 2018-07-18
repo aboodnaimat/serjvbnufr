@@ -2480,7 +2480,6 @@ message.channel.stopTyping()
 
       
       
-      const prefix = "="; // prefix
 const Discord = require('discord.js');// npm i discord.js
 const client = new Discord.Client();
 const id = JSON.parse(fs.readFileSync("mozo.json", "utf8"));
