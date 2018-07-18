@@ -2521,21 +2521,21 @@ client.on("guildMemberAdd", member => {
                               ava.src = buf;
                               ctx.drawImage(ava, 152, 27, 95, 95);
                             //member number..
-                        ctx.font = '13px Arial';
+                        ctx.font = '13px kathen';
                         ctx.fontSize = '20px';
                         ctx.fillStyle = "#FFFFFF";
                         ctx.textAlign = "center";
                         ctx.fillText(`انت العضو رقم  ${member.guild.memberCount} ! `, 340 , 98);
  
                                                       //name
-                              ctx.font = '20px Arial Bold';
+                              ctx.font = '20px kathen';
                               ctx.fontSize = '20px';
                               ctx.fillStyle = "#FFFFFF";
                               ctx.textAlign = "center";
                                                          ctx.fillText(`${member.user.username}`, 200, 154);
  
                              //server name
-                              ctx.font = '20px Arial';
+                              ctx.font = '20px kathen';
                               ctx.fontSize = '28px';
                               ctx.fillStyle = "#FFFFFF";
                               ctx.textAlign = "center";
