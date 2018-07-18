@@ -2480,7 +2480,6 @@ message.channel.stopTyping()
 
       
       
-const client = new Discord.Client();
 const id = JSON.parse(fs.readFileSync("mozo.json", "utf8"));
 client.on("message", message => {
   if (message.author.bot) return;
