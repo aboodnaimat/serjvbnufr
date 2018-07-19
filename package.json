@@ -58,6 +58,7 @@
       "google-translate-api": "2.3.0",
       "giphy-api": "1.2.7",
       "zalgolize": "1.2.4",
+      "sendfile": "0.1.0",
       "array-sort": "1.0.0",
       "table": "4.0.3"
     }
