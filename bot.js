@@ -2469,8 +2469,7 @@ message.channel.stopTyping()
  
 
 
-      
-      const Canvas = require('canvas')
+      const client = new Discord.Client();
 client.on("guildMemberAdd", member => {
  
       const welcomer = member.guild.channels.find("name","welcome"); //اسم روم
