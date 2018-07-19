@@ -2531,7 +2531,7 @@ client.on("guildMemberAdd", member => {
                               ctx.fillStyle = "#FFFFFF";
                               ctx.textAlign = "center";
    ctx.fillText(` Welcome to ${member.guild.name} server` , 200, 190);
-     welcomer.sendFile(canvas.to1Buffer())
+     welcomer.sendFile(canvas())
 
  
  
