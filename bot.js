@@ -498,6 +498,7 @@ console.log('[38ab] Send By: ' + message.author.username)
   }
 });
 
+
 client.on('message', ra3d => {
 var prefix = "-";
                         let args = ra3d.content.split(" ").slice(1).join(" ")
