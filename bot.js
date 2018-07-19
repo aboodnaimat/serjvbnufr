@@ -2469,7 +2469,6 @@ message.channel.stopTyping()
  
 
 
-      const client = new Discord.Client();
 client.on("guildMemberAdd", member => {
  
       const welcomer = member.guild.channels.find("name","welcome"); //اسم روم
@@ -2530,7 +2529,7 @@ client.on("guildMemberAdd", member => {
                               ctx.fillStyle = "#FFFFFF";
                               ctx.textAlign = "center";
    ctx.fillText(` Welcome to ${member.guild.name} server` , 200, 190);
-     welcomer.sendFile(canvas())
+     welcomer.sendFile(())
 
  
  
