@@ -2127,7 +2127,13 @@ client.on('message', message => {
 
  
  
-
+client.on("guildMemberAdd", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(`:rose:  ولكم نورت السيرفر:rose: 
+:crown:اسم العضو  ${member}:crown:  
+انت العضو رقم ${member.guild.memberCount} `) 
+}).catch(console.error)
+})
 
 client.on('message', message => {
         if (message.content === "-inv") {
@@ -2524,7 +2530,8 @@ client.on("guildMemberAdd", member => {
                               ctx.fillStyle = "#FFFFFF";
                               ctx.textAlign = "center";
    ctx.fillText(` Welcome to ${member.guild.name} server` , 200, 190);
- 
+     welcomer.sendFile(canvas.to1Buffer())
+
  
  
  
