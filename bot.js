@@ -56,82 +56,12 @@ ${prefix}help-m ⇏    **  | لعرض الاوامر الاغاني**
    }); 
    
 
-   client.on("message", message => {
-      if (message.content === "-help-p") {
-       const embed = new Discord.RichEmbed() 
-           .setThumbnail(message.author.avatarURL)
-           .setColor("#FF0000")
-           .setDescription(`**   :earth_africa: الأوامر العامه :earth_africa: **
-**============ **
-
-  ** -allbots | لعرض جميع البوتات الي بالسيرفر** :robot: 
-
-  ** -server |يعرض لك معلومات عن السيرفر**:fire: 
-
-  ** -bot | يعرض لك كل معلومات البوت**:computer: 
-  
-  ** -skin <name> | يعرض لك سكنك بماين كرافت**:blush:
-
-  ** -count | يعرض لك عدد الاشخاص بالسيرفر بدون بوتات** :information_source:
-
-  ** -invites | يعرض لك  عدد انفايتاتك بالسيرفر ** :microscope: 
-
-  ** -invite-codes | يعرض لك روابط الانفايتات حكك في السيرفر **:spy: 
-
-  ** -cal | اله حاسبة**:slot_machine: 
-
-  ** -trans <language> <any thing> | يترجم لك الي تبيه من اي لغة**:writing_hand: 
-
-  ** -short | يختصر لك رابط كبير الى رابط صغير**:mortar_board: 
-
-  ** -tag | يكتب لك الكلمة بشكل جميل وكبير**:sunglasses: 
-
-  ** -google | للبحث في قوقل عن طريق الدسكورد**:desktop: 
-
-  ** -perms | يعرض لك برمشناتك بالسيرفر**:pushpin: 
-
-  ** -za5 | يزخرف لك كلمة او جملة**:hearts: 
-
-  ** -rooms | يعرض لك كل الرومات الي بالسيرفر مع عددها**:rocket: 
-
-  ** -roles | يعرض لك كل الرانكات بالسيرفر بشكل جميل**
-
-  ** -emojilist | يعرض لك كل الايموجيات الي بالسيرفر**:cry: :smile: :joy: 
-
-  ** -say | يكرر الكلام الي تكتبو**:sparkles: 
-
-  ** -image | صورة السيرفر**:bust_in_silhouette: 
-
-  ** -members | يعرض لك عدد كل حالات الاشخاص وعدد البوتات وعدد الاشخاص**:selfie: 
-
-  ** -profile | ليعرض البرفايل حقك** 
-
-  ** -bans | عدد الاشخاص المبندة **:no_entry: 
-
-  ** -avatar | صورتك او صورة الي تمنشنو**:bust_in_silhouette:
-
-  ** -embed | يكرر الي تقولو بشكل حلو**:small_blue_diamond: 
-
-  ** -emoji <any things> | لتحويل اي كلمه تقولها الي ايموجي**:small_orange_diamond: 
-
-  ** -inv | لدعوة البوت الى سيرفرك**:black_circle: 
-
-  ** -support | سيرفر الدعم**:wrench:  :envelope_with_arrow: 
-  
-  ** -contact | ارسال اقتراح او لمراسلة صاحب البوت**
-  
-**  ======:blossom:نــتــمــنــآ لــكــم آســتــمـــتــآع :blossom:======  **`)
-     message.author.sendEmbed(embed)
-     
-     }
-     });
 
    
 client.on('message', message => {
     if (message.content === "-help1") {
     let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
-  .setFooter(`LEGEND_YT#4537 .`, 'https://images-ext-2.discordapp.net/external/X9SanEG0s7Dtv3krTgy-kod_fj6JRVJ2AG4JryCiiz0/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/375761288518828042/fffa31c797e88cf059dd6db424ff456a.png?width=80&height=80')
   .setColor("#000000")
   .addField("Done | تــــم" , ":envelope: | :sleuth_or_spy::skin-tone-3:شيك علي في الخاص")
   
@@ -146,7 +76,6 @@ client.on('message', message => {
     if (message.content === "-help-p") {
     let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
-  .setFooter(`LEGEND_YT#4537 .`, 'https://images-ext-2.discordapp.net/external/X9SanEG0s7Dtv3krTgy-kod_fj6JRVJ2AG4JryCiiz0/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/375761288518828042/fffa31c797e88cf059dd6db424ff456a.png?width=80&height=80')
   .setColor("#000000")
   .addField("Done | تــــم" , ":envelope: | :sleuth_or_spy::skin-tone-3:شيك علي في الخاص")
   
@@ -160,7 +89,6 @@ client.on('message', message => {
     if (message.content === "-help-a") {
     let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
-  .setFooter(`LEGEND_YT#4537 .`, 'https://images-ext-2.discordapp.net/external/X9SanEG0s7Dtv3krTgy-kod_fj6JRVJ2AG4JryCiiz0/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/375761288518828042/fffa31c797e88cf059dd6db424ff456a.png?width=80&height=80')
   .setColor("#000000")
   .addField("Done | تــــم" , ":envelope: | :sleuth_or_spy::skin-tone-3:شيك علي في الخاص")
   
@@ -174,7 +102,6 @@ client.on('message', message => {
     if (message.content === "-help-g") {
     let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
-  .setFooter(`LEGEND_YT#4537 .`, 'https://images-ext-2.discordapp.net/external/X9SanEG0s7Dtv3krTgy-kod_fj6JRVJ2AG4JryCiiz0/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/375761288518828042/fffa31c797e88cf059dd6db424ff456a.png?width=80&height=80')
   .setColor("#000000")
   .addField("Done | تــــم" , ":envelope: | :sleuth_or_spy::skin-tone-3:شيك علي في الخاص")
   
@@ -189,7 +116,6 @@ client.on('message', message => {
     if (message.content === "-help-m") {
     let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
-  .setFooter(`LEGEND_YT#4537 .`, 'https://images-ext-2.discordapp.net/external/X9SanEG0s7Dtv3krTgy-kod_fj6JRVJ2AG4JryCiiz0/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/375761288518828042/fffa31c797e88cf059dd6db424ff456a.png?width=80&height=80')
   .setColor("#000000")
   .addField("Done | تــــم" , ":envelope: | :sleuth_or_spy::skin-tone-3:شيك علي في الخاص")
   
@@ -669,9 +595,53 @@ client.on('message', message => {
      }
      });
 
+       client.on("message", message => {
+      if (message.content === "-help-a") {
+       const embed = new Discord.RichEmbed() 
+           .setColor("#FF00FF")
+           .setFooter('By *LEGEND_YT#4537  ')
+           .setDescription(`**__أتمنى يعجبكم البوت يا أغلى ناس:revolving_hearts: __**`)
+     message.author.sendEmbed(embed)
+     
+     }
+     });
+
+
+     client.on("message", message => {
+      if (message.content === "-help-g") {
+       const embed = new Discord.RichEmbed() 
+           .setColor("#FF00FF")
+           .setFooter('By *LEGEND_YT#4537  ')
+           .setDescription(`**__أتمنى يعجبكم البوت يا أغلى ناس:revolving_hearts: __**`)
+     message.author.sendEmbed(embed)
+     
+     }
+     });
+
+
+     client.on("message", message => {
+      if (message.content === "-help-m") {
+       const embed = new Discord.RichEmbed() 
+           .setColor("#FF00FF")
+           .setFooter('By *LEGEND_YT#4537  ')
+           .setDescription(`**__أتمنى يعجبكم البوت يا أغلى ناس:revolving_hearts: __**`)
+     message.author.sendEmbed(embed)
+     
+     }
+     });
+
   
-  
-  
+       client.on("message", message => {
+      if (message.content === "-help-p") {
+       const embed = new Discord.RichEmbed() 
+           .setColor("#FF00FF")
+           .setFooter('By *LEGEND_YT#4537  ')
+           .setDescription(`**__أتمنى يعجبكم البوت يا أغلى ناس:revolving_hearts: __**`)
+     message.author.sendEmbed(embed)
+     
+     }
+     });
+
      client.on("message", message => {
       if (message.content === "-help1") {
        const embed = new Discord.RichEmbed() 
