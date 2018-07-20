@@ -37,6 +37,8 @@ client.on("message", message => {
 	  
 	         Please Chose: 
 			 
+${prefix}help1 ⇏    **  | لعرض جميع اوامر البوت**  
+
 ${prefix}help-p ⇏    **  | لعرض الاوامر العامه**  
 
 ${prefix}help-a ⇏    **  | لعرض الاوامر الاداريه**  
