@@ -3349,13 +3349,13 @@ ctx.font = '35px Aeland';
                         ctx.fillText(" Welcome to " + member.guild.name , 440, 25);
  
                         //ur name
-                        ctx.font = '40px Impact';
+                        ctx.font = '40px kathen';
                         ctx.fontSize = '48px';
                         ctx.fillStyle = "#FFFFFF";
                         ctx.textAlign = "center";
                         ctx.fillText(member.user.username, 420, 100);
  
-                         ctx.font = '30px Impact';
+                         ctx.font = '30px kathen';
                         ctx.fontSize = '20px';
                         ctx.fillStyle = "#FFFFFF";
                         ctx.textAlign = "center";
