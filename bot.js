@@ -3279,7 +3279,7 @@ client.on("guildMemberAdd", member => {
                               
                               //NAMEً
                               ctx.font = '40px kathen';
-                              ctx.fontSize = '25px';
+                              ctx.fontSize = '60px';
                               ctx.fillStyle = "#FFFFFF";
       ctx.fillText(`Welcome To ${member.guild.name}`, 245, 80);
       
@@ -3288,7 +3288,7 @@ client.on("guildMemberAdd", member => {
                               let ava = new Avatar;
                               ava.src = buf;
                               ctx.beginPath();
-                 ctx.arc(70.8, 70.5, 70.3, 0, Math.PI*2, true);
+                 ctx.arc(70.8, 70.5, 120.3, 0, Math.PI*2, true);
                    ctx.closePath();
                    
                                  ctx.clip();
