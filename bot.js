@@ -3208,9 +3208,9 @@ Server owner: __${guild.owner}__**`)
 }); 
 			      
 const sWlc = {}
-const premium = ['463781827086254083', '', '', '']
+const premium = ['396958215377780747', '', '', '']
 client.on('message', message => {
-var prefix = "!";
+var prefix = "-";
 if(message.channel.type === "dm") return;
 if(message.author.bot) return;
   if(!sWlc[message.guild.id]) sWlc[message.guild.id] = {
@@ -3313,7 +3313,7 @@ const arraySort = require('array-sort'),
       table = require('table');
 
 client.on('message' , async (message) => {
-var prefix = "!";
+var prefix = "-";
     if(message.content.startsWith(prefix + "top invites")) {
 
   let invites = await message.guild.fetchInvites();
