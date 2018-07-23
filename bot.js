@@ -3273,23 +3273,23 @@ client.on("guildMemberAdd", member => {
                           ava.getBuffer(jimp.MIME_PNG, (err, buf) => {
                               if (err) return console.log(err);
       
-                                    ctx.font = '18px kathen';
-                              ctx.fontSize = '17px';
+                                    ctx.font = '24px kathen';
+                              ctx.fontSize = '40px';
                               ctx.fillStyle = "#FFFFFF";
-                                ctx.fillText(member.user.username, 240, 150);
+                                ctx.fillText(member.user.username, 900, 700);
                               
                               //NAMEً
-                              ctx.font = '20px kathen';
-                              ctx.fontSize = '10px';
+                              ctx.font = '24px kathen';
+                              ctx.fontSize = '40px';
                               ctx.fillStyle = "#FFFFFF";
-      ctx.fillText(`Welcome To ${member.guild.name}`, 245, 80);
+      ctx.fillText(`Welcome To ${member.guild.name}`, 900, 550);
       
                               //AVATARً
                               let Avatar = Canvas.Image;
                               let ava = new Avatar;
                               ava.src = buf;
                               ctx.beginPath();
-                 ctx.arc(120.8, 120.5, 100.3, 0, Math.PI*2, true);
+                 ctx.arc(158.8, 120.5, 100.3, 0, Math.PI*2, true);
                    ctx.closePath();
                    
                                  ctx.clip();
