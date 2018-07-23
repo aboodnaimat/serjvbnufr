@@ -3273,14 +3273,14 @@ client.on("guildMemberAdd", member => {
                           ava.getBuffer(jimp.MIME_PNG, (err, buf) => {
                               if (err) return console.log(err);
       
-                                    ctx.font = '30px kathen';
-                              ctx.fontSize = '20px';
+                                    ctx.font = '18px kathen';
+                              ctx.fontSize = '12px';
                               ctx.fillStyle = "#FFFFFF";
                                 ctx.fillText(member.user.username, 245, 150);
                               
                               //NAMEً
-                              ctx.font = '24px kathen';
-                              ctx.fontSize = '20px';
+                              ctx.font = '20px kathen';
+                              ctx.fontSize = '10px';
                               ctx.fillStyle = "#FFFFFF";
       ctx.fillText(`Welcome To ${member.guild.name}`, 245, 80);
       
