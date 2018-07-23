@@ -3263,7 +3263,7 @@ client.on("guildMemberAdd", member => {
                   let BG = Canvas.Image;
                   let ground = new Image;
                   ground.src = Background;
-                  ctx.drawImage(ground, 0, 0, 557, 241);
+                  ctx.drawImage(ground, 0, 0, 540, 230);
       
       })
       
@@ -3274,9 +3274,9 @@ client.on("guildMemberAdd", member => {
                               if (err) return console.log(err);
       
                                     ctx.font = '18px kathen';
-                              ctx.fontSize = '12px';
+                              ctx.fontSize = '17px';
                               ctx.fillStyle = "#FFFFFF";
-                                ctx.fillText(member.user.username, 245, 150);
+                                ctx.fillText(member.user.username, 240, 150);
                               
                               //NAMEً
                               ctx.font = '20px kathen';
@@ -3289,7 +3289,7 @@ client.on("guildMemberAdd", member => {
                               let ava = new Avatar;
                               ava.src = buf;
                               ctx.beginPath();
-                 ctx.arc(120.8, 120.5, 112.3, 0, Math.PI*2, true);
+                 ctx.arc(120.8, 120.5, 100.3, 0, Math.PI*2, true);
                    ctx.closePath();
                    
                                  ctx.clip();
