@@ -3276,20 +3276,20 @@ client.on("guildMemberAdd", member => {
                                     ctx.font = '24px kathen';
                               ctx.fontSize = '40px';
                               ctx.fillStyle = "#FFFFFF";
-                                ctx.fillText(member.user.username, 900, 700);
+                                ctx.fillText(member.user.username, 254, 175);
                               
                               //NAMEً
                               ctx.font = '24px kathen';
-                              ctx.fontSize = '40px';
+                              ctx.fontSize = '20px';
                               ctx.fillStyle = "#FFFFFF";
-      ctx.fillText(`Welcome To ${member.guild.name}`, 900, 550);
+      ctx.fillText(`Welcome To ${member.guild.name}`, 245, 80);
       
                               //AVATARً
                               let Avatar = Canvas.Image;
                               let ava = new Avatar;
                               ava.src = buf;
                               ctx.beginPath();
-                 ctx.arc(158.8, 120.5, 100.3, 0, Math.PI*2, true);
+                 ctx.arc(130.8, 120.5, 100.3, 0, Math.PI*2, true);
                    ctx.closePath();
                    
                                  ctx.clip();
