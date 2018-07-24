@@ -3289,7 +3289,7 @@ client.on("guildMemberAdd", member => {
                               let ava = new Avatar;
                               ava.src = buf;
                               ctx.beginPath();
-                 ctx.arc(113.8, 113.5, 105.3, 0, Math.PI*2, true);
+                 ctx.arc(120.8, 100.5, 105.3, 0, Math.PI*2, true);
                    ctx.closePath();
                    
                                  ctx.clip();
