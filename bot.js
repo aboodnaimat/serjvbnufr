@@ -455,18 +455,18 @@ client.on('message', message => {
  .setTitle(`Welcome To ${msg.guild.name}`)
            .setFooter(`- Requested By: ${msg.author.tag}`,msg.author.avatarURL)
   .setURL('https://discordapp.com/oauth2/authorize/?permissions=268443710&scope=bot&client_id=465885551329804288')
- .setDescription(`**اذا كنت تريد الاوامر العامة اظغط الريكشن** 🌏 \n**اذا كنت تريد الاوامر الادارية اظغط الريكشن**🔧 \n**اذا كنت تريد بعض الشرح عن البوت اضغط الريكشن**💥 \n**اذا كنت تريد الالغاء اظغط الريكشن **❌\n              **وشكرا لمستخدمين البوت**`)  
+ .setDescription(`**اذا كنت تريد الاوامر العامة اظغط الريكشن** 🌏 \n**اذا كنت تريد الاوامر الادارية اظغط الريكشن**🔧 \n**اذا كنت تريد اوامر الالعاب**🎲 \n**اذا كنت تريد اوامر الاغاني **🎶\n              **وشكرا لمستخدمين البوت**`)  
  
  .setTimestamp()
 }).then(zg => {
      zg.react('🌏').then(r=>{
      zg.react('🔧').then(r=>{
-     zg.react('💥').then(r=>{
-     zg.react('❌').then(r=>{          
+     zg.react('🎲').then(r=>{
+     zg.react('🎶').then(r=>{          
  var aaa = (reaction, user) => reaction.emoji.name === '🌏' && user.id === msg.author.id;
    var mmm = (reaction, user) => reaction.emoji.name === '🔧' && user.id === msg.author.id;
-    var vvv = (reaction, user) => reaction.emoji.name === '💥' && user.id === msg.author.id;
-    var ccc = (reaction, user) => reaction.emoji.name === '❌' && user.id === msg.author.id;
+    var vvv = (reaction, user) => reaction.emoji.name === '🎲' && user.id === msg.author.id;
+    var ccc = (reaction, user) => reaction.emoji.name === '🎶' && user.id === msg.author.id;
  
     var aa = zg.createReactionCollector(aaa, { maxMatches:1 , time: 60000 , });
     var mm = zg.createReactionCollector(mmm, { maxMatches:1 , time: 60000 , });
