@@ -445,7 +445,7 @@ client.on('message', message => {
      });
 
     client.on('message', async msg => {
-    var prefix = "$";
+    var prefix = "-";
     var user = msg.author;
         if (msg.content === (prefix +'help')) {
         if(!msg.channel.guild) return msg.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
@@ -454,7 +454,7 @@ client.on('message', message => {
  .setThumbnail(msg.author.avatarURL)
  .setTitle(`Welcome To ${msg.guild.name}`)
            .setFooter(`- Requested By: ${msg.author.tag}`,msg.author.avatarURL)
-  .setURL('https://discordapp.com/oauth2/authorize/?permissions=268443710&scope=bot&client_id=465885551329804288')
+  .setURL('https://discordapp.com/oauth2/authorize?client_id=466256531998900246&permissions=8&scope=bot')
  .setDescription(`**اذا كنت تريد الاوامر العامة اظغط الريكشن** 🌏 \n**اذا كنت تريد الاوامر الادارية اظغط الريكشن**🔧 \n**اذا كنت تريد اوامر الالعاب**🎲 \n**اذا كنت تريد اوامر الاغاني **🎶\n              **وشكرا لمستخدمين البوت**`)  
  
  .setTimestamp()
@@ -479,8 +479,8 @@ aa.on("collect", r => {
  .setThumbnail(msg.author.avatarURL)
  .setTitle(`Welcome To ${msg.guild.name}`)
           .setFooter(`- Requested By: ${msg.author.tag}`,msg.author.avatarURL)
-  .setURL('https://discordapp.com/oauth2/authorize/?permissions=268443710&scope=bot&client_id=465885551329804288')
-.setDescription(`**:earth_americas:  General Commends**\n${prefix}**server - لعرض معلومات عن سيرفرك**\n${prefix}**roll - القرعة**\n${prefix}**ms7f - فتح المصحف**\n${prefix}**invites - لرؤية دعواتك**\n${prefix}**skin - رؤية سكنك بماين كرافت**\n$**avatar [user] - لعرض صورتك او صوره شخص**\n$**system-sar7 - لمعرفة نظام امر صراحة**\n$**tC - لانشاء رومات مؤقتة**\n$**user - معلومات عن حسابك**\n$**mb - معلومات عن الاعضاء**\n$**icon - لاظهار صورة سيرفرك**\n$**tr - لترجمة اي شي تقولة **\n$**cal - لتشغيل الألة الحاسبة**`)
+  .setURL('https://discordapp.com/oauth2/authorize?client_id=466256531998900246&permissions=8&scope=bot')
+.setDescription(`        ***__الاوامر العامه__*** **\n${prefix}**allbots/لعرض جميع البوتات الي بالسيرفر』**\n${prefix}**server/يعرض لك معلومات عن السيرفر』**\n${prefix}**bot/يعرض لك كل معلومات البوت』**\n${prefix}**credit/يعرض لك الكردت حقك』**\n${prefix}**daily/لاخذ يوميتك من الكردت』**\n${prefix}**profile/لعرض البروفايل الخاص بك』**\n${prefix}**setwelcomer <name chat> /لتفعيل الترحيب بصوره 』**\n${prefix}**invites/ يعرض لك  عدد انفايتاتك بالسيرفر 』**\n${prefix}**invite-codes/يعرض لك روابط الانفايتات حكك في السيرفر 』**\n${prefix}**cal/اله حاسبة**\n${prefix}**trans <language> <any thing>/يترجم لك الي تبيه من اي لغة』**\n${prefix}**short/يختصر لك رابط كبير الى رابط صغير』**\n${prefix}**tag/يكتب لك الكلمة بشكل جميل وكبير』**\n${prefix}**google/للبحث في قوقل عن طريق الدسكورد』**\n${prefix}**perms/يعرض لك برمشناتك بالسيرفر』**\n${prefix}**za5/يزخرف لك كلمة او جملة』**\n${prefix}**rooms/يعرض لك كل الرومات الي بالسيرفر مع عددها』**\n${prefix}**roles/يعرض لك كل الرانكات بالسيرفر بشكل جميل』**\n${prefix}**say/يكرر الكلام الي تكتبو』**\n${prefix}**image/صورة السيرفر』**\n${prefix}**members/��عرض لك عدد كل حالات الاشخاص وعدد البوتات وعدد الاشخاص』**\n${prefix}**id/معلومات عنك』**\n${prefix}**bans / عدد الاشخاص المبندة 』**\n${prefix}**avatar/صورتك او صورة الي تمنشنو』**\n${prefix}**embed/يكرر الي تقولو بشكل حلو』**\n${prefix}**discrim/كود يضهر لك الاشخاص نفس تاقك』**\n${prefix}**emoji <any things>/لتحويل اي كلمه تقولها الي ايموجي』**\n${prefix}**inv/لدعوة البوت الى سيرفرك』**\n${prefix}**support/سيرفر الدعم』**\n${prefix}**contact/ارسال اقتراح او لمراسلة صاحب البوت』`)
  
  .setTimestamp()
     });
