@@ -445,7 +445,7 @@ client.on('message', message => {
      });
 
     client.on('message', async msg => {
-    var prefix = "$";
+    var prefix = "-";
     var user = msg.author;
         if (msg.content === (prefix +'help')) {
         if(!msg.channel.guild) return msg.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
@@ -456,14 +456,6 @@ client.on('message', message => {
            .setFooter(`- Requested By: ${msg.author.tag}`,msg.author.avatarURL)
   .setURL('https://discordapp.com/oauth2/authorize/?permissions=268443710&scope=bot&client_id=465885551329804288')
  .setDescription(`
-
-
-
-
-
-
-
-
 `)  
  
  .setTimestamp()
@@ -531,7 +523,7 @@ aa.on("collect", r => {
 `)
  
  .setTimestamp()
-    });
+   
    
    
     })//
@@ -569,7 +561,7 @@ mm.on("collect", r => {
 『**\n${prefix}**ccolors <number> / ينشا لك الوان مع كم الوان تبي』`)  
  
 .setTimestamp()
-    });
+   
     })
 nn.on("collect", r => {
     zg.edit({embed: new Discord.RichEmbed ()
@@ -593,7 +585,7 @@ nn.on("collect", r => {
  
  
  .setTimestamp()
-    });
+   
 })
 vv.on("collect", r => {
     zg.edit({embed: new Discord.RichEmbed ()
@@ -603,21 +595,21 @@ vv.on("collect", r => {
            .setFooter(`- Requested By: ${msg.author.tag}`,msg.author.avatarURL)
   .setURL('https://discordapp.com/oauth2/authorize/?permissions=268443710&scope=bot&client_id=465885551329804288')
 .setDescription(`        **' SuperBot Discord.
-『**\n${prefix}**help - لرؤية الأوامر :comet: 
+『**\n${prefix}**help - لرؤية الأوامر :comet:
 『**\n${prefix}**inv - لدعوة البوت :wine_glass:
-\n معلومات عن البوت :thinking: 
-\n بوت ديسكورت متكامل :soccer: :microphone: :earth_americas: 
-\nيوجد داخل البوت خاصية منع التهكير مجانا وبسهوله تامة :scream: 
-\nصيانة دورية :stopwatch: :wrench: 
+\n معلومات عن البوت :thinking:
+\n بوت ديسكورت متكامل :soccer: :microphone: :earth_americas:
+\nيوجد داخل البوت خاصية منع التهكير مجانا وبسهوله تامة :scream:
+\nصيانة دورية :stopwatch: :wrench:
 \n 24 ساعة :point_up:
-\nاضافات يومية :link: 
-\n الدعم الفني للمساعدةة : https://discord.gg/yWwdycB  :rose: 
+\nاضافات يومية :link:
+\n الدعم الفني للمساعدةة : https://discord.gg/yWwdycB  :rose:
 \n وشكرا لكم :lizard: **
 `)
  
  
  .setTimestamp()
-    });
+   
    
 })
 pp.on("collect", r => {
@@ -628,7 +620,7 @@ pp.on("collect", r => {
            .setFooter(`- Requested By: ${msg.author.tag}`,msg.author.avatarURL)
   .setURL('https://discordapp.com/oauth2/authorize/?permissions=268443710&scope=bot&client_id=465885551329804288')
 .setDescription(`   ***__اوامر العاب__***
- **       
+ **      
 『**\n${prefix}**rps / حجر ورقة مقص』
 『**\n${prefix}**speed / اسرع كتابة』
 『**\n${prefix}**quas / اسئلة عامة』
@@ -645,9 +637,9 @@ pp.on("collect", r => {
 `)
  
  
-
+ 
  .setTimestamp()
-    });
+   
    
 })
 cc.on("collect", r => {
