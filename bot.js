@@ -570,7 +570,6 @@ mm.on("collect", r => {
  
 .setTimestamp()
     });
-   
     })
 nn.on("collect", r => {
     zg.edit({embed: new Discord.RichEmbed ()
@@ -595,7 +594,6 @@ nn.on("collect", r => {
  
  .setTimestamp()
     });
-   
 })
 vv.on("collect", r => {
     zg.edit({embed: new Discord.RichEmbed ()
