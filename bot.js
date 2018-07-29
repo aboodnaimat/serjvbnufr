@@ -647,6 +647,7 @@ pp.on("collect", r => {
 `)
  
  
+
  .setTimestamp()
     });
    
@@ -660,9 +661,8 @@ cc.on("collect", r => {
      })
      })
 })
-
-     })});
-
+     }
+     });
 client.on('message', message => {
 if (message.content.startsWith(prefix + 'help1')) { 
     let pages = [`
