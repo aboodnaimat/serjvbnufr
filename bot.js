@@ -660,7 +660,7 @@ cc.on("collect", r => {
      })
      })
 })
-     }
+     })
      });
 
 client.on('message', message => {
