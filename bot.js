@@ -445,7 +445,7 @@ client.on('message', message => {
      });
 
     client.on('message', async msg => {
-    var prefix = "-";
+    var prefix = "$";
     var user = msg.author;
         if (msg.content === (prefix +'help')) {
         if(!msg.channel.guild) return msg.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
@@ -455,29 +455,22 @@ client.on('message', message => {
  .setTitle(`Welcome To ${msg.guild.name}`)
            .setFooter(`- Requested By: ${msg.author.tag}`,msg.author.avatarURL)
   .setURL('https://discordapp.com/oauth2/authorize/?permissions=268443710&scope=bot&client_id=465885551329804288')
- .setDescription(`
-`)  
+ .setDescription(`**اذا كنت تريد الاوامر العامة اظغط الريكشن** 🌏 \n**اذا كنت تريد الاوامر الادارية اظغط الريكشن**🔧 \n**اذا كنت تريد اوامر الالعاب**🎲 \n**اذا كنت تريد اوامر الاغاني **🎶\n              **وشكرا لمستخدمين البوت**`)  
  
  .setTimestamp()
 }).then(zg => {
      zg.react('🌏').then(r=>{
      zg.react('🔧').then(r=>{
+     zg.react('🎲').then(r=>{
      zg.react('🎶').then(r=>{          
-     zg.react('🎲').then(r=>{          
-     zg.react('💥').then(r=>{
-     zg.react('❌').then(r=>{          
  var aaa = (reaction, user) => reaction.emoji.name === '🌏' && user.id === msg.author.id;
    var mmm = (reaction, user) => reaction.emoji.name === '🔧' && user.id === msg.author.id;
-    var nnn = (reaction, user) => reaction.emoji.name === '🎶' && user.id === msg.author.id;
-    var ppp = (reaction, user) => reaction.emoji.name === '🎲' && user.id === msg.author.id;
-    var vvv = (reaction, user) => reaction.emoji.name === '💥' && user.id === msg.author.id;
-    var ccc = (reaction, user) => reaction.emoji.name === '❌' && user.id === msg.author.id;
+    var vvv = (reaction, user) => reaction.emoji.name === '🎲' && user.id === msg.author.id;
+    var ccc = (reaction, user) => reaction.emoji.name === '🎶' && user.id === msg.author.id;
  
     var aa = zg.createReactionCollector(aaa, { maxMatches:1 , time: 60000 , });
-    var nn = zg.createReactionCollector(nnn, { maxMatches:1 , time: 60000 , });
-    var pp = zg.createReactionCollector(ppp, { maxMatches:1 , time: 60000 , });
-    var vv = zg.createReactionCollector(vvv, { maxMatches:1 , time: 60000 , });
     var mm = zg.createReactionCollector(mmm, { maxMatches:1 , time: 60000 , });
+    var vv = zg.createReactionCollector(vvv, { maxMatches:1 , time: 60000 , });
     var cc = zg.createReactionCollector(ccc, { maxMatches:1 , time: 60000 , });
  
 aa.on("collect", r => {
@@ -506,7 +499,7 @@ mm.on("collect", r => {
 .setTimestamp()
    
     })
-nn.on("collect", r => {
+cc.on("collect", r => {
     zg.edit({embed: new Discord.RichEmbed ()
 .setAuthor(client.user.username , client.user.avatarURL)
  .setThumbnail(msg.author.avatarURL)
@@ -519,21 +512,8 @@ nn.on("collect", r => {
  .setTimestamp()
    
 })
+
 vv.on("collect", r => {
-    zg.edit({embed: new Discord.RichEmbed ()
-.setAuthor(client.user.username , client.user.avatarURL)
- .setThumbnail(msg.author.avatarURL)
- .setTitle(`Welcome To ${msg.guild.name}`)
-           .setFooter(`- Requested By: ${msg.author.tag}`,msg.author.avatarURL)
-  .setURL('https://discordapp.com/oauth2/authorize/?permissions=268443710&scope=bot&client_id=465885551329804288')
-.setDescription(`        **' SuperBot Discord.**\n${prefix}**help - لرؤية الأوامر :comet:**\n${prefix}**inv - لدعوة البوت :wine_glass:\n معلومات عن البوت :thinking:\n بوت ديسكورت متكامل :soccer: :microphone: :earth_americas:\nيوجد داخل البوت خاصية منع التهكير مجانا وبسهوله تامة :scream:\nصيانة دورية :stopwatch: :wrench:\n 24 ساعة :point_up:\nاضافات يومية :link:\n الدعم الفني للمساعدةة : https://discord.gg/yWwdycB  :rose:\n وشكرا لكم :lizard: **`)
- 
- 
- .setTimestamp()
-   
-   
-})
-pp.on("collect", r => {
     zg.edit({embed: new Discord.RichEmbed ()
 .setAuthor(client.user.username , client.user.avatarURL)
  .setThumbnail(msg.author.avatarURL)
@@ -548,16 +528,13 @@ pp.on("collect", r => {
    
    
 })
-cc.on("collect", r => {
-    zg.delete();
-    msg.delete();
-})
+
      }).then(msg => msg.delete(15000));
      })
      })
      })
 })
-     
+     }
      });
 client.on('message', message => {
 if (message.content.startsWith(prefix + 'help1')) { 
