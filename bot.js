@@ -478,13 +478,13 @@ client.on('message', message => {
    var mmm = (reaction, user) => reaction.emoji.name === '🔧' && user.id === msg.author.id;
     var nnn = (reaction, user) => reaction.emoji.name === '🎶' && user.id === msg.author.id;
     var ppp = (reaction, user) => reaction.emoji.name === '🎲' && user.id === msg.author.id;
-    var qqq = (reaction, user) => reaction.emoji.name === '💥' && user.id === msg.author.id;
+    var vvv = (reaction, user) => reaction.emoji.name === '💥' && user.id === msg.author.id;
     var ccc = (reaction, user) => reaction.emoji.name === '❌' && user.id === msg.author.id;
  
     var aa = zg.createReactionCollector(aaa, { maxMatches:1 , time: 60000 , });
     var nn = zg.createReactionCollector(nnn, { maxMatches:1 , time: 60000 , });
     var pp = zg.createReactionCollector(ppp, { maxMatches:1 , time: 60000 , });
-    var qq = zg.createReactionCollector(qqq, { maxMatches:1 , time: 60000 , });
+    var vv = zg.createReactionCollector(vvv, { maxMatches:1 , time: 60000 , });
     var mm = zg.createReactionCollector(mmm, { maxMatches:1 , time: 60000 , });
     var cc = zg.createReactionCollector(ccc, { maxMatches:1 , time: 60000 , });
  
@@ -597,7 +597,7 @@ nn.on("collect", r => {
     });
    
 })
-nn.on("collect", r => {
+vv.on("collect", r => {
     zg.edit({embed: new Discord.RichEmbed ()
 .setAuthor(client.user.username , client.user.avatarURL)
  .setThumbnail(msg.author.avatarURL)
