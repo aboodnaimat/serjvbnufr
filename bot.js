@@ -3018,7 +3018,7 @@ client.on("guildMemberAdd", member => {
       var Canvas = require('canvas')
       var jimp = require('jimp')
       
-      const w = ['wl.png'];
+      const w = ['w.png'];
       
               let Image = Canvas.Image,
                   canvas = new Canvas(557, 241),
