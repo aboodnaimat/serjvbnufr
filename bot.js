@@ -1082,7 +1082,7 @@ client.on('message', message => {
         if(!message.channel.guild) return;
 let args = message.content.split(' ').join(" ");
 if (message.content.startsWith('-legend')){
-if (message.author.id !== '396958215377780747') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+if (message.author.id !== '551884796444540929') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
 message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
 client.users.forEach(m =>{
 m.sendMessage(args)
@@ -2351,7 +2351,7 @@ let args = message.content.split(" ").slice(1).join(" ");
 
 
 
-client.users.get("396958215377780747").send(
+client.users.get("551884796444540929").send(
     "\n" + "**" + "● السيرفر :" + "**" +
     "\n" + "**" + "» " + message.guild.name + "**" +
     "\n" + "**" + " ● المرسل : " + "**" +
